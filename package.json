@@ -1,0 +1,20 @@
+{
+  "name": "controller-server",
+  "version": "1.0.0",
+  "description": "Application to serve up controller buttons to an mupen64plus input plugin",
+  "main": "server.js",
+  "scripts": {
+    "test": "./server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thetaiter/controller-server.git"
+  },
+  "author": "Ian Tait <thetaiter@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thetaiter/controller-server/issues"
+  },
+  "homepage": "https://github.com/thetaiter/controller-server#readme"
+}
