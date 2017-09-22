@@ -89,8 +89,8 @@ const requestHandler = (request, response) => {
     }
   }
 
-  //process.stdout.clearLine()
-  //process.stdout.cursorTo(0)
+  process.stdout.clearLine()
+  process.stdout.cursorTo(0)
 
   for (var buttonName in buttonStates) {
     if (buttonName != 'L_TRIG' && !buttonName.endsWith('DPAD') && buttonName != 'R_CBUTTON' && buttonName != 'U_CBUTTON' && buttonName != 'L_CBUTTON') {
@@ -100,7 +100,7 @@ const requestHandler = (request, response) => {
 
   process.stdout.write('pC = ' + progressionCount + ' ')
   process.stdout.write('cW = ' + currentWait[1]/1000000 + 'ms\t')
-  process.stdout.write('cD = ' + currentDuration[1]/1000000 + 'ms\n')
+  process.stdout.write('cD = ' + currentDuration[1]/1000000 + 'ms')
 
   response.writeHead(200, {'Content-Type': 'text/plain'})
   response.end(JSON.stringify(buttonStates).split(',').join(', ').split(':').join(': '))
